@@ -1,0 +1,5 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/Geography/**/*';
+@source '../../../../resources/views/filament/geography/**/*';
+@source '../../../../resources/views/filament/pages/geography/**/*';
