@@ -44,11 +44,16 @@ class AdminPanelProvider extends PanelProvider
                     ->openUrlInNewTab()
                     ->icon('heroicon-o-calculator')
                     ->sort(2),
+                NavigationItem::make('Sales')
+                    ->url('/sales')
+                    ->openUrlInNewTab()
+                    ->icon('heroicon-o-shopping-cart')
+                    ->sort(3),
                 NavigationItem::make('Geography')
                     ->url('/geography')
                     ->openUrlInNewTab()
                     ->icon('heroicon-o-map')
-                    ->sort(3),
+                    ->sort(4),
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([

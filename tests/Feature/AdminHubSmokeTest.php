@@ -17,6 +17,7 @@ it('renders the admin main dashboard with quick links to the other panels', func
         ->assertOk()
         ->assertSee('Products')
         ->assertSee('Accounting')
+        ->assertSee('Sales')
         ->assertSee('Geography');
 });
 
@@ -25,5 +26,6 @@ it('shows only panels the user can access', function () {
 
     expect($response->getContent())->toContain('href="/catalog"')
         ->and($response->getContent())->toContain('href="/accounting"')
+        ->and($response->getContent())->toContain('href="/sales"')
         ->and($response->getContent())->toContain('href="/geography"');
 });

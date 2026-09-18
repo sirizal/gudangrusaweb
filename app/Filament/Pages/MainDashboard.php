@@ -53,6 +53,7 @@ class MainDashboard extends Page
         return match ($panelId) {
             'products' => 'Manage brands, categories, products, and units.',
             'accounting' => 'Chart of accounts, journals, budgets, and financial reports.',
+            'sales' => 'Customers, sales orders, invoices, and receivables aging.',
             'geography' => 'Indonesian administrative regions from country to village.',
             default => 'Manage this module.',
         };
