@@ -58,12 +58,18 @@ class AdminPanelProvider extends PanelProvider
                     ->icon('heroicon-o-clipboard-document-list')
                     ->visible(fn (): bool => auth()->user()?->canAccessPanel(filament()->getPanel('purchasing')) ?? false)
                     ->sort(4),
+                NavigationItem::make('WMS')
+                    ->url('/wms')
+                    ->openUrlInNewTab()
+                    ->icon('heroicon-o-building-office-2')
+                    ->visible(fn (): bool => auth()->user()?->canAccessPanel(filament()->getPanel('wms')) ?? false)
+                    ->sort(5),
                 NavigationItem::make('Geography')
                     ->url('/geography')
                     ->openUrlInNewTab()
                     ->icon('heroicon-o-map')
                     ->visible(fn (): bool => auth()->user()?->canAccessPanel(filament()->getPanel('geography')) ?? false)
-                    ->sort(5),
+                    ->sort(6),
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([

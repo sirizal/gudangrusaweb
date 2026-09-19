@@ -18,6 +18,8 @@ enum Role: string implements HasLabel
 
     case Purchasing = 'purchasing';
 
+    case Warehouse = 'warehouse';
+
     case Viewer = 'viewer';
 
     public function getLabel(): string
@@ -29,6 +31,7 @@ enum Role: string implements HasLabel
             self::BudgetOwner => 'Budget Owner',
             self::BudgetApprover => 'Budget Approver',
             self::Purchasing => 'Purchasing',
+            self::Warehouse => 'Warehouse',
             self::Viewer => 'Viewer',
         };
     }

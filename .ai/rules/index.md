@@ -21,9 +21,10 @@ Before planning or editing, find the row whose globs match the file's path and r
 | app/Models/ProductVariant.php, app/Models/**, app/Models/FinancialStatementLine.php, app/Models/User.php, app/Models/Company*.php | .ai/rules/models.md |
 | app/Filament/Accounting/Pages/**, app/Filament/Accounting/Pages/*Report.php, app/Filament/Accounting/Pages/ImportBudget.php | .ai/rules/pages.md |
 | app/Services/Products/CatalogImportService.php | .ai/rules/products.md |
-| app/Providers/Filament/AccountingPanelProvider.php, app/Providers/Filament/ProductsPanelProvider.php | .ai/rules/providers-filament.md |
+| app/Providers/Filament/AccountingPanelProvider.php, app/Providers/Filament/ProductsPanelProvider.php, app/Providers/Filament/WmsPanelProvider.php | .ai/rules/providers-filament.md |
 | app/Filament/Purchasing/Resources/** | .ai/rules/purchasing-resources.md |
 | app/Services/Purchasing/**, app/Services/Purchasing/PurchasingNumberGenerator.php | .ai/rules/purchasing.md |
 | app/Filament/Accounting/Resources/** | .ai/rules/resources.md |
 | app/Services/Sales/**, app/Services/Sales/SalesInvoiceService.php | .ai/rules/sales.md |
 | resources/views/** | .ai/rules/views.md |
+| app/Services/Wms/** | .ai/rules/wms.md |

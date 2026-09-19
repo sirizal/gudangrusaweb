@@ -46,6 +46,10 @@ class User extends Authenticatable implements FilamentUser
             return $this->hasRole(Role::SuperAdmin, Role::FinanceManager, Role::Accountant, Role::Purchasing);
         }
 
+        if ($panel->getId() === 'wms') {
+            return $this->hasRole(Role::SuperAdmin, Role::FinanceManager, Role::Accountant, Role::Warehouse);
+        }
+
         // Admin, Products, and any other panel are open to authenticated users.
         return true;
     }

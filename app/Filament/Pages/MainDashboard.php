@@ -55,6 +55,7 @@ class MainDashboard extends Page
             'accounting' => 'Chart of accounts, journals, budgets, and financial reports.',
             'sales' => 'Customers, sales orders, invoices, and receivables aging.',
             'purchasing' => 'Vendors, purchase requests/orders, receiving, and payables.',
+            'wms' => 'Warehouses, inbound/outbound, and FIFO inventory stock.',
             'geography' => 'Indonesian administrative regions from country to village.',
             default => 'Manage this module.',
         };
