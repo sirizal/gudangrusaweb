@@ -220,6 +220,7 @@ class AccountingSeeder extends Seeder
                             ['code' => '2120', 'name' => 'Accrued Expenses', 'type' => AccountType::Liability, 'balance' => NormalBalance::Credit],
                             ['code' => '2130', 'name' => 'Tax Payable', 'type' => AccountType::Liability, 'balance' => NormalBalance::Credit],
                             ['code' => '2140', 'name' => 'Employee Payable', 'type' => AccountType::Liability, 'balance' => NormalBalance::Credit],
+                            ['code' => '2150', 'name' => 'Goods Received Not Invoiced', 'type' => AccountType::Liability, 'balance' => NormalBalance::Credit],
                         ],
                     ],
                     [
@@ -327,6 +328,7 @@ class AccountingSeeder extends Seeder
         $this->createStatementLine(StatementType::BalanceSheet, 'BS-FA', 'Fixed Assets', 50, ['1210'], includeDescendants: true);
         $this->createStatementLine(StatementType::BalanceSheet, 'BS-AD', 'Accumulated Depreciation', 60, ['1220']);
         $this->createStatementLine(StatementType::BalanceSheet, 'BS-AP', 'Accounts Payable', 70, ['2110']);
+        $this->createStatementLine(StatementType::BalanceSheet, 'BS-GRNI', 'Goods Received Not Invoiced', 71, ['2150']);
         $this->createStatementLine(StatementType::BalanceSheet, 'BS-ACR', 'Accrued Liabilities', 80, ['2120']);
         $this->createStatementLine(StatementType::BalanceSheet, 'BS-TAX', 'Tax Payables', 90, ['2130']);
         $this->createStatementLine(StatementType::BalanceSheet, 'BS-LOAN', 'Loans', 100, ['2210', '2220']);

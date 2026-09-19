@@ -10,6 +10,7 @@ Before planning or editing, find the row whose globs match the file's path and r
 | app/Filament/Accounting/Resources/Companies/** | .ai/rules/companies.md |
 | config/livewire.php | .ai/rules/config.md |
 | app/Http/Controllers/ShopController.php | .ai/rules/controllers.md |
+| database/** | .ai/rules/database.md |
 | app/Filament/Geography/** | .ai/rules/filament-geography.md |
 | app/Filament/Pages/MainDashboard.php | .ai/rules/filament-pages.md |
 | app/Filament/**/*.php | .ai/rules/filament.md |
@@ -21,6 +22,8 @@ Before planning or editing, find the row whose globs match the file's path and r
 | app/Filament/Accounting/Pages/**, app/Filament/Accounting/Pages/*Report.php, app/Filament/Accounting/Pages/ImportBudget.php | .ai/rules/pages.md |
 | app/Services/Products/CatalogImportService.php | .ai/rules/products.md |
 | app/Providers/Filament/AccountingPanelProvider.php, app/Providers/Filament/ProductsPanelProvider.php | .ai/rules/providers-filament.md |
+| app/Filament/Purchasing/Resources/** | .ai/rules/purchasing-resources.md |
+| app/Services/Purchasing/**, app/Services/Purchasing/PurchasingNumberGenerator.php | .ai/rules/purchasing.md |
 | app/Filament/Accounting/Resources/** | .ai/rules/resources.md |
 | app/Services/Sales/**, app/Services/Sales/SalesInvoiceService.php | .ai/rules/sales.md |
 | resources/views/** | .ai/rules/views.md |

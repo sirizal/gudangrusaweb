@@ -5,6 +5,7 @@ use App\Providers\Filament\AccountingPanelProvider;
 use App\Providers\Filament\AdminPanelProvider;
 use App\Providers\Filament\GeographyPanelProvider;
 use App\Providers\Filament\ProductsPanelProvider;
+use App\Providers\Filament\PurchasingPanelProvider;
 use App\Providers\Filament\SalesPanelProvider;
 
 return [
@@ -14,4 +15,5 @@ return [
     GeographyPanelProvider::class,
     ProductsPanelProvider::class,
     SalesPanelProvider::class,
+    PurchasingPanelProvider::class,
 ];

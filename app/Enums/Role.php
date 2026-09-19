@@ -16,6 +16,8 @@ enum Role: string implements HasLabel
 
     case BudgetApprover = 'budget_approver';
 
+    case Purchasing = 'purchasing';
+
     case Viewer = 'viewer';
 
     public function getLabel(): string
@@ -26,6 +28,7 @@ enum Role: string implements HasLabel
             self::Accountant => 'Accountant',
             self::BudgetOwner => 'Budget Owner',
             self::BudgetApprover => 'Budget Approver',
+            self::Purchasing => 'Purchasing',
             self::Viewer => 'Viewer',
         };
     }

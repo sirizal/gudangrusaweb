@@ -54,6 +54,7 @@ class MainDashboard extends Page
             'products' => 'Manage brands, categories, products, and units.',
             'accounting' => 'Chart of accounts, journals, budgets, and financial reports.',
             'sales' => 'Customers, sales orders, invoices, and receivables aging.',
+            'purchasing' => 'Vendors, purchase requests/orders, receiving, and payables.',
             'geography' => 'Indonesian administrative regions from country to village.',
             default => 'Manage this module.',
         };

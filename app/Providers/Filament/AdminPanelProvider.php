@@ -38,22 +38,32 @@ class AdminPanelProvider extends PanelProvider
                     ->url('/catalog')
                     ->openUrlInNewTab()
                     ->icon('heroicon-o-shopping-bag')
+                    ->visible(fn (): bool => auth()->user()?->canAccessPanel(filament()->getPanel('products')) ?? false)
                     ->sort(1),
                 NavigationItem::make('Accounting')
                     ->url('/accounting')
                     ->openUrlInNewTab()
                     ->icon('heroicon-o-calculator')
+                    ->visible(fn (): bool => auth()->user()?->canAccessPanel(filament()->getPanel('accounting')) ?? false)
                     ->sort(2),
                 NavigationItem::make('Sales')
                     ->url('/sales')
                     ->openUrlInNewTab()
                     ->icon('heroicon-o-shopping-cart')
+                    ->visible(fn (): bool => auth()->user()?->canAccessPanel(filament()->getPanel('sales')) ?? false)
                     ->sort(3),
+                NavigationItem::make('Purchasing')
+                    ->url('/purchasing')
+                    ->openUrlInNewTab()
+                    ->icon('heroicon-o-clipboard-document-list')
+                    ->visible(fn (): bool => auth()->user()?->canAccessPanel(filament()->getPanel('purchasing')) ?? false)
+                    ->sort(4),
                 NavigationItem::make('Geography')
                     ->url('/geography')
                     ->openUrlInNewTab()
                     ->icon('heroicon-o-map')
-                    ->sort(4),
+                    ->visible(fn (): bool => auth()->user()?->canAccessPanel(filament()->getPanel('geography')) ?? false)
+                    ->sort(5),
             ])
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
             ->pages([
